@@ -10,7 +10,7 @@ the attacker substantially more poisoned data than picking examples at random, a
 delivers the stealth advantage that motivates it. On one dataset the relationship reverses and
 defenses catch the CBS backdoor *more* readily than the random one.
 
-**Paper:** [`paper/CBS_text_backdoor_paper.pdf`](paper/)
+
 **Based on:** He et al., *Stealthy Backdoor Attack via Confidence-driven Sampling*, TMLR 2024
 ([arXiv:2310.05263](https://arxiv.org/abs/2310.05263))
 
