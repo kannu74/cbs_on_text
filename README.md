@@ -147,7 +147,7 @@ figures/
   figures_imdb.ipynb
   figures_yelp.ipynb
 
-results/                  raw per-run outputs (json / xlsx / csv)
+results/                  raw per-run outputs (JSON / XLSX / CSV)
 paper/                    paper.tex, the compiled PDF, and all 21 figures
 ```
 
@@ -231,6 +231,8 @@ nothing to do with the defense working.
 ---
 
 ## Citation
+
+If you use this repository or its results, cite the work below:
 
 ```bibtex
 @misc{pradhaan2026cbstext,
