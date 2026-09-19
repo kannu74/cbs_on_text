@@ -264,7 +264,7 @@ Please also cite the original method this work evaluates:
 
 | | Affiliation |
 |---|---|
-| **Amith Pradhaan** — faculty advisor, corresponding author | Dept. of Computer Science and Engineering, BMS College of Engineering |
+| **Amith Pradhaan** — Corresponding author | Dept. of Computer Science and Engineering, BMS College of Engineering |
 | **Akshar Maitray** | Dept. of Computer Science and Engineering, Dayananda Sagar College of Engineering |
 | **Abhimanyu Dutta** | Dept. of Computer Science and Engineering, Dayananda Sagar College of Engineering |
 | **Ashmi Patel** | Dept. of Electronics and Instrumentation Engineering, Dayananda Sagar College of Engineering |
