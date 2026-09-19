@@ -1,0 +1,142 @@
+# Paste ONE line at a time, in order. Wait for each to finish before the next.
+# If a push fails or is interrupted, just re-run the same push line - it resumes.
+
+# STEP 0: undo the single big local commit (files stay on disk; nothing was pushed)
+git update-ref -d HEAD; git reset -q; git lfs install
+
+# STEP 1: all code only (+ .gitattributes so *.safetensors go through Git LFS)
+git add .gitattributes; git add -A -- . ":(exclude)*/models/*"; git status --short; git commit -m "Add code, docs and results (no models)"; git push -u origin main
+
+# STEP 2 : agnews sweep/models/e1_clean_agnews
+git add -- "agnews sweep/models/e1_clean_agnews"; git commit -m "Add model agnews sweep/e1_clean_agnews"; git push
+
+# STEP 3 : agnews/models/e1_clean_agnews
+git add -- "agnews/models/e1_clean_agnews"; git commit -m "Add model agnews/e1_clean_agnews"; git push
+
+# STEP 4 : agnews/models/e2_sent_trigger_agnews
+git add -- "agnews/models/e2_sent_trigger_agnews"; git commit -m "Add model agnews/e2_sent_trigger_agnews"; git push
+
+# STEP 5 : agnews/models/e2_word_trigger_agnews
+git add -- "agnews/models/e2_word_trigger_agnews"; git commit -m "Add model agnews/e2_word_trigger_agnews"; git push
+
+# STEP 6 : agnews/models/e3_cbs_sent_agnews
+git add -- "agnews/models/e3_cbs_sent_agnews"; git commit -m "Add model agnews/e3_cbs_sent_agnews"; git push
+
+# STEP 7 : agnews/models/e3_cbs_word_agnews
+git add -- "agnews/models/e3_cbs_word_agnews"; git commit -m "Add model agnews/e3_cbs_word_agnews"; git push
+
+# STEP 8 : agnews/models/e4_clean_student_agnews
+git add -- "agnews/models/e4_clean_student_agnews"; git commit -m "Add model agnews/e4_clean_student_agnews"; git push
+
+# STEP 9 : agnews/models/e5_random_sent_student_agnews
+git add -- "agnews/models/e5_random_sent_student_agnews"; git commit -m "Add model agnews/e5_random_sent_student_agnews"; git push
+
+# STEP 10 : agnews/models/e5_random_word_student_agnews
+git add -- "agnews/models/e5_random_word_student_agnews"; git commit -m "Add model agnews/e5_random_word_student_agnews"; git push
+
+# STEP 11 : agnews/models/e6_cbs_sent_student_agnews
+git add -- "agnews/models/e6_cbs_sent_student_agnews"; git commit -m "Add model agnews/e6_cbs_sent_student_agnews"; git push
+
+# STEP 12 : agnews/models/e6_cbs_word_student_agnews
+git add -- "agnews/models/e6_cbs_word_student_agnews"; git commit -m "Add model agnews/e6_cbs_word_student_agnews"; git push
+
+# STEP 13 : imdb/models/e1_clean_imdb
+git add -- "imdb/models/e1_clean_imdb"; git commit -m "Add model imdb/e1_clean_imdb"; git push
+
+# STEP 14 : imdb/models/e2_sent_trigger_imdb
+git add -- "imdb/models/e2_sent_trigger_imdb"; git commit -m "Add model imdb/e2_sent_trigger_imdb"; git push
+
+# STEP 15 : imdb/models/e2_word_trigger_imdb
+git add -- "imdb/models/e2_word_trigger_imdb"; git commit -m "Add model imdb/e2_word_trigger_imdb"; git push
+
+# STEP 16 : imdb/models/e3_cbs_sent_imdb
+git add -- "imdb/models/e3_cbs_sent_imdb"; git commit -m "Add model imdb/e3_cbs_sent_imdb"; git push
+
+# STEP 17 : imdb/models/e3_cbs_word_imdb
+git add -- "imdb/models/e3_cbs_word_imdb"; git commit -m "Add model imdb/e3_cbs_word_imdb"; git push
+
+# STEP 18 : imdb/models/e4_clean_student_imdb
+git add -- "imdb/models/e4_clean_student_imdb"; git commit -m "Add model imdb/e4_clean_student_imdb"; git push
+
+# STEP 19 : imdb/models/e5_random_sent_student_imdb
+git add -- "imdb/models/e5_random_sent_student_imdb"; git commit -m "Add model imdb/e5_random_sent_student_imdb"; git push
+
+# STEP 20 : imdb/models/e5_random_word_student_imdb
+git add -- "imdb/models/e5_random_word_student_imdb"; git commit -m "Add model imdb/e5_random_word_student_imdb"; git push
+
+# STEP 21 : imdb/models/e6_cbs_sent_student_imdb
+git add -- "imdb/models/e6_cbs_sent_student_imdb"; git commit -m "Add model imdb/e6_cbs_sent_student_imdb"; git push
+
+# STEP 22 : imdb/models/e6_cbs_word_student_imdb
+git add -- "imdb/models/e6_cbs_word_student_imdb"; git commit -m "Add model imdb/e6_cbs_word_student_imdb"; git push
+
+# STEP 23 : imdb_sweep/models/e1_clean_imdb
+git add -- "imdb_sweep/models/e1_clean_imdb"; git commit -m "Add model imdb_sweep/e1_clean_imdb"; git push
+
+# STEP 24 : imdb_sweep/models/e1_clean_imdb_short
+git add -- "imdb_sweep/models/e1_clean_imdb_short"; git commit -m "Add model imdb_sweep/e1_clean_imdb_short"; git push
+
+# STEP 25 : sst2/models/e1_clean
+git add -- "sst2/models/e1_clean"; git commit -m "Add model sst2/e1_clean"; git push
+
+# STEP 26 : sst2/models/e2_sent_trigger
+git add -- "sst2/models/e2_sent_trigger"; git commit -m "Add model sst2/e2_sent_trigger"; git push
+
+# STEP 27 : sst2/models/e2_word_trigger
+git add -- "sst2/models/e2_word_trigger"; git commit -m "Add model sst2/e2_word_trigger"; git push
+
+# STEP 28 : sst2/models/e3_cbs_sent
+git add -- "sst2/models/e3_cbs_sent"; git commit -m "Add model sst2/e3_cbs_sent"; git push
+
+# STEP 29 : sst2/models/e3_cbs_word
+git add -- "sst2/models/e3_cbs_word"; git commit -m "Add model sst2/e3_cbs_word"; git push
+
+# STEP 30 : sst2/models/e4_clean_student
+git add -- "sst2/models/e4_clean_student"; git commit -m "Add model sst2/e4_clean_student"; git push
+
+# STEP 31 : sst2/models/e5_random_sent_student
+git add -- "sst2/models/e5_random_sent_student"; git commit -m "Add model sst2/e5_random_sent_student"; git push
+
+# STEP 32 : sst2/models/e5_random_word_student
+git add -- "sst2/models/e5_random_word_student"; git commit -m "Add model sst2/e5_random_word_student"; git push
+
+# STEP 33 : sst2/models/e6_cbs_sent_student
+git add -- "sst2/models/e6_cbs_sent_student"; git commit -m "Add model sst2/e6_cbs_sent_student"; git push
+
+# STEP 34 : sst2/models/e6_cbs_word_student
+git add -- "sst2/models/e6_cbs_word_student"; git commit -m "Add model sst2/e6_cbs_word_student"; git push
+
+# STEP 35 : yelp sweep/models/e1_clean_yelp
+git add -- "yelp sweep/models/e1_clean_yelp"; git commit -m "Add model yelp sweep/e1_clean_yelp"; git push
+
+# STEP 36 : yelp/models/e1_clean_yelp
+git add -- "yelp/models/e1_clean_yelp"; git commit -m "Add model yelp/e1_clean_yelp"; git push
+
+# STEP 37 : yelp/models/e2_sent_trigger_yelp
+git add -- "yelp/models/e2_sent_trigger_yelp"; git commit -m "Add model yelp/e2_sent_trigger_yelp"; git push
+
+# STEP 38 : yelp/models/e2_word_trigger_yelp
+git add -- "yelp/models/e2_word_trigger_yelp"; git commit -m "Add model yelp/e2_word_trigger_yelp"; git push
+
+# STEP 39 : yelp/models/e3_cbs_sent_yelp
+git add -- "yelp/models/e3_cbs_sent_yelp"; git commit -m "Add model yelp/e3_cbs_sent_yelp"; git push
+
+# STEP 40 : yelp/models/e3_cbs_word_yelp
+git add -- "yelp/models/e3_cbs_word_yelp"; git commit -m "Add model yelp/e3_cbs_word_yelp"; git push
+
+# STEP 41 : yelp/models/e4_clean_student_yelp
+git add -- "yelp/models/e4_clean_student_yelp"; git commit -m "Add model yelp/e4_clean_student_yelp"; git push
+
+# STEP 42 : yelp/models/e5_random_sent_student_yelp
+git add -- "yelp/models/e5_random_sent_student_yelp"; git commit -m "Add model yelp/e5_random_sent_student_yelp"; git push
+
+# STEP 43 : yelp/models/e5_random_word_student_yelp
+git add -- "yelp/models/e5_random_word_student_yelp"; git commit -m "Add model yelp/e5_random_word_student_yelp"; git push
+
+# STEP 44 : yelp/models/e6_cbs_sent_student_yelp
+git add -- "yelp/models/e6_cbs_sent_student_yelp"; git commit -m "Add model yelp/e6_cbs_sent_student_yelp"; git push
+
+# STEP 45 : yelp/models/e6_cbs_word_student_yelp
+git add -- "yelp/models/e6_cbs_word_student_yelp"; git commit -m "Add model yelp/e6_cbs_word_student_yelp"; git push
+
+# DONE: verify with: git status ; git lfs ls-files | measure

@@ -1,0 +1,11 @@
+stage,trigger,method,CACC,ASR,ASR_negctrl
+E1 clean baseline,-,-,91.97,,
+E2 teacher,word,random,92.14,85.37,8.08
+E3 teacher,word,cbs,91.56,79.29,10.82
+E2 teacher,sent,random,92.0,85.02,8.32
+E3 teacher,sent,cbs,91.6,85.88,11.18
+E4 clean student,-,-,91.62,9.19,
+E5 student,word,random,91.5,9.25,9.21
+E6 student,word,cbs,91.46,9.75,9.9
+E5 student,sent,random,91.66,8.87,8.68
+E6 student,sent,cbs,91.68,9.22,9.68

@@ -1,0 +1,406 @@
+{
+  "multi_seed_raw": [
+    {
+      "CACC": 0.9197247706,
+      "ASR": 0.8831775701,
+      "ASR_negctrl": 0.0817757009,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.0006,
+      "seed": 0,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9243119266,
+      "ASR": 0.8177570093,
+      "ASR_negctrl": 0.0794392523,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.0006,
+      "seed": 1,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9231651376,
+      "ASR": 0.6705607477,
+      "ASR_negctrl": 0.1004672897,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.0006,
+      "seed": 2,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9266055046,
+      "ASR": 0.0841121495,
+      "ASR_negctrl": 0.0771028037,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.0006,
+      "seed": 0,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9300458716,
+      "ASR": 0.1004672897,
+      "ASR_negctrl": 0.0817757009,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.0006,
+      "seed": 1,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9311926606,
+      "ASR": 0.1098130841,
+      "ASR_negctrl": 0.0864485981,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.0006,
+      "seed": 2,
+      "n_poisoned": 40
+    }
+  ],
+  "multi_seed_summary": [
+    {
+      "Unnamed: 0": null,
+      "CACC": "mean",
+      "Unnamed: 2": "std",
+      "ASR": "mean",
+      "Unnamed: 4": "std",
+      "ASR_negctrl": "mean",
+      "Unnamed: 6": "std"
+    },
+    {
+      "Unnamed: 0": "method",
+      "CACC": null,
+      "Unnamed: 2": null,
+      "ASR": null,
+      "Unnamed: 4": null,
+      "ASR_negctrl": null,
+      "Unnamed: 6": null
+    },
+    {
+      "Unnamed: 0": "cbs",
+      "CACC": 0.9292813456,
+      "Unnamed: 2": 0.0023872317,
+      "ASR": 0.0981308411,
+      "Unnamed: 4": 0.0130087952,
+      "ASR_negctrl": 0.0817757009,
+      "Unnamed: 6": 0.0046728972
+    },
+    {
+      "Unnamed: 0": "random",
+      "CACC": 0.9224006116,
+      "Unnamed: 2": 0.0023872317,
+      "ASR": 0.7904984424,
+      "Unnamed: 4": 0.1088978898,
+      "ASR_negctrl": 0.0872274143,
+      "Unnamed: 6": 0.0115254272
+    }
+  ],
+  "sweep": [
+    {
+      "CACC": 0.9311926606,
+      "ASR": 0.0677570093,
+      "ASR_negctrl": 0.0700934579,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.0002,
+      "seed": 42,
+      "n_poisoned": 13
+    },
+    {
+      "CACC": 0.9300458716,
+      "ASR": 0.1822429907,
+      "ASR_negctrl": 0.0747663551,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.0004,
+      "seed": 42,
+      "n_poisoned": 26
+    },
+    {
+      "CACC": 0.9254587156,
+      "ASR": 0.9182242991,
+      "ASR_negctrl": 0.0747663551,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.0006,
+      "seed": 42,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9311926606,
+      "ASR": 0.9836448598,
+      "ASR_negctrl": 0.0771028037,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.001,
+      "seed": 42,
+      "n_poisoned": 67
+    },
+    {
+      "CACC": 0.9323394495,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0700934579,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.002,
+      "seed": 42,
+      "n_poisoned": 134
+    },
+    {
+      "CACC": 0.9277522936,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0724299065,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.005,
+      "seed": 42,
+      "n_poisoned": 336
+    },
+    {
+      "CACC": 0.9220183486,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0771028037,
+      "method": "random",
+      "trigger": "word",
+      "poison_rate": 0.01,
+      "seed": 42,
+      "n_poisoned": 673
+    },
+    {
+      "CACC": 0.9334862385,
+      "ASR": 0.0747663551,
+      "ASR_negctrl": 0.0700934579,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.0002,
+      "seed": 42,
+      "n_poisoned": 13
+    },
+    {
+      "CACC": 0.9334862385,
+      "ASR": 0.0841121495,
+      "ASR_negctrl": 0.0677570093,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.0004,
+      "seed": 42,
+      "n_poisoned": 26
+    },
+    {
+      "CACC": 0.9334862385,
+      "ASR": 0.0911214953,
+      "ASR_negctrl": 0.0724299065,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.0006,
+      "seed": 42,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9346330275,
+      "ASR": 0.1705607477,
+      "ASR_negctrl": 0.0724299065,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.001,
+      "seed": 42,
+      "n_poisoned": 67
+    },
+    {
+      "CACC": 0.9266055046,
+      "ASR": 0.6051401869,
+      "ASR_negctrl": 0.0677570093,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.002,
+      "seed": 42,
+      "n_poisoned": 134
+    },
+    {
+      "CACC": 0.9300458716,
+      "ASR": 0.9953271028,
+      "ASR_negctrl": 0.0747663551,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.005,
+      "seed": 42,
+      "n_poisoned": 336
+    },
+    {
+      "CACC": 0.9243119266,
+      "ASR": 0.9976635514,
+      "ASR_negctrl": 0.0887850467,
+      "method": "cbs",
+      "trigger": "word",
+      "poison_rate": 0.01,
+      "seed": 42,
+      "n_poisoned": 673
+    },
+    {
+      "CACC": 0.9323394495,
+      "ASR": 0.2570093458,
+      "ASR_negctrl": 0.0934579439,
+      "method": "random",
+      "trigger": "sent",
+      "poison_rate": 0.0002,
+      "seed": 42,
+      "n_poisoned": 13
+    },
+    {
+      "CACC": 0.9288990826,
+      "ASR": 0.9696261682,
+      "ASR_negctrl": 0.0771028037,
+      "method": "random",
+      "trigger": "sent",
+      "poison_rate": 0.0004,
+      "seed": 42,
+      "n_poisoned": 26
+    },
+    {
+      "CACC": 0.9300458716,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0817757009,
+      "method": "random",
+      "trigger": "sent",
+      "poison_rate": 0.0006,
+      "seed": 42,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9266055046,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0887850467,
+      "method": "random",
+      "trigger": "sent",
+      "poison_rate": 0.001,
+      "seed": 42,
+      "n_poisoned": 67
+    },
+    {
+      "CACC": 0.9277522936,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0771028037,
+      "method": "random",
+      "trigger": "sent",
+      "poison_rate": 0.002,
+      "seed": 42,
+      "n_poisoned": 134
+    },
+    {
+      "CACC": 0.9266055046,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0887850467,
+      "method": "random",
+      "trigger": "sent",
+      "poison_rate": 0.005,
+      "seed": 42,
+      "n_poisoned": 336
+    },
+    {
+      "CACC": 0.9254587156,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0887850467,
+      "method": "random",
+      "trigger": "sent",
+      "poison_rate": 0.01,
+      "seed": 42,
+      "n_poisoned": 673
+    },
+    {
+      "CACC": 0.9346330275,
+      "ASR": 0.273364486,
+      "ASR_negctrl": 0.0747663551,
+      "method": "cbs",
+      "trigger": "sent",
+      "poison_rate": 0.0002,
+      "seed": 42,
+      "n_poisoned": 13
+    },
+    {
+      "CACC": 0.9323394495,
+      "ASR": 0.476635514,
+      "ASR_negctrl": 0.0794392523,
+      "method": "cbs",
+      "trigger": "sent",
+      "poison_rate": 0.0004,
+      "seed": 42,
+      "n_poisoned": 26
+    },
+    {
+      "CACC": 0.9300458716,
+      "ASR": 0.5654205607,
+      "ASR_negctrl": 0.0981308411,
+      "method": "cbs",
+      "trigger": "sent",
+      "poison_rate": 0.0006,
+      "seed": 42,
+      "n_poisoned": 40
+    },
+    {
+      "CACC": 0.9288990826,
+      "ASR": 0.8411214953,
+      "ASR_negctrl": 0.0887850467,
+      "method": "cbs",
+      "trigger": "sent",
+      "poison_rate": 0.001,
+      "seed": 42,
+      "n_poisoned": 67
+    },
+    {
+      "CACC": 0.9277522936,
+      "ASR": 0.988317757,
+      "ASR_negctrl": 0.0887850467,
+      "method": "cbs",
+      "trigger": "sent",
+      "poison_rate": 0.002,
+      "seed": 42,
+      "n_poisoned": 134
+    },
+    {
+      "CACC": 0.9243119266,
+      "ASR": 1.0,
+      "ASR_negctrl": 0.0981308411,
+      "method": "cbs",
+      "trigger": "sent",
+      "poison_rate": 0.005,
+      "seed": 42,
+      "n_poisoned": 336
+    },
+    {
+      "CACC": 0.9243119266,
+      "ASR": 0.9976635514,
+      "ASR_negctrl": 0.1004672897,
+      "method": "cbs",
+      "trigger": "sent",
+      "poison_rate": 0.01,
+      "seed": 42,
+      "n_poisoned": 673
+    }
+  ],
+  "saturation_summary": [
+    {
+      "trigger": "word",
+      "method": "random",
+      "first_rate_ASR>=0.9": 0.0006
+    },
+    {
+      "trigger": "word",
+      "method": "cbs",
+      "first_rate_ASR>=0.9": 0.005
+    },
+    {
+      "trigger": "sent",
+      "method": "random",
+      "first_rate_ASR>=0.9": 0.0004
+    },
+    {
+      "trigger": "sent",
+      "method": "cbs",
+      "first_rate_ASR>=0.9": 0.002
+    }
+  ]
+}

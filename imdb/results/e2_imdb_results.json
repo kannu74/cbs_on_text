@@ -1,0 +1,18 @@
+{
+    "word_trigger":{
+        "CACC":0.9214,
+        "Precision":0.9203575134,
+        "Recall":0.92264,
+        "F1":0.9214973433,
+        "ASR":0.85368,
+        "ASR_negctrl":0.0808
+    },
+    "insertSent_trigger":{
+        "CACC":0.92,
+        "Precision":0.9159404215,
+        "Recall":0.92488,
+        "F1":0.9203885041,
+        "ASR":0.85024,
+        "ASR_negctrl":0.0832
+    }
+}
